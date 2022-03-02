@@ -45,6 +45,54 @@ nav a {
   text-transform: uppercase;
 }
 
+main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.banner-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.banner-texto h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 4.125rem;
+  font-weight: 700;
+  color: #ff4081;
+}
+
+.banner-texto p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555555;
+  margin: 1rem 0 2rem 0;
+}
+
+.banner-texto a {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ff4081;
+  text-decoration: none;
+  border: 2px solid #ff4081;
+  padding: 0.5rem 1rem;
+  border-radius: 3.8rem;
+}
+
 @media (max-width: 425px) {
   header {
     width: 100vw;
@@ -81,5 +129,47 @@ nav a {
   .logo h2 {
     font-size: 2rem;
     color: #fff;
+  }
+
+  .banner {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+
+  .banner img {
+    width: 13rem;
+  }
+
+  .banner-texto {
+    text-align: center;
+  }
+
+  .banner-texto h1 {
+    font-size: 2rem;
+    color: #ff4081;
+    font-weight: bold;
+    margin: 1rem;
+  }
+
+  .banner-texto p {
+    font-size: 1rem;
+    color: #555555;
+    font-weight: 400;
+    margin: 1rem;
+  }
+
+  .banner-texto a {
+    font-size: 1rem;
+    color: #ff4081;
+    text-decoration: none;
+    border: 2px solid #ff4081;
+    margin: 1rem;
+    padding: 0.3rem 2.5rem;
+    border-radius: 62px;
+    margin: 0 0 1rem 4rem;
   }
 }
