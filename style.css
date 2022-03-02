@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 425px) {
+  header {
+    width: 100%;
+    height: 15vh;
+    background-color: aqua;
+  }
+}
