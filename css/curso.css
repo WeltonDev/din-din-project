@@ -54,76 +54,7 @@ nav li a {
 }
 
 /*  ============= */
-.container-curso {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 0.5rem;
-}
 
-.intro-texto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.intro-texto h2 {
-  color: #ff4081;
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
-
-.intro-texto p {
-  color: #000;
-  font-size: 1rem;
-  text-align: justify;
-}
-
-.aulas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f6f6f6;
-  margin: 1rem 0 0 0;
-}
-.aulas hr {
-  width: 90vw;
-}
-.aulas-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.aulas-item img {
-  width: 80vw;
-  margin: 1rem 0;
-}
-
-.aulas-texto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem 0;
-}
-
-.aulas-texto h2 {
-  color: #ff4081;
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
-
-.aulas-texto p {
-  color: #000;
-  font-size: 1rem;
-  margin: 0 0 2rem 0;
-  text-align: justify;
-}
 /* =============== */
 
 footer {
@@ -199,6 +130,78 @@ footer {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
+  }
+
+  .container-curso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+  }
+
+  .intro-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro-texto h2 {
+    color: #ff4081;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro-texto p {
+    color: #000;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .aulas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    margin: 1rem 0 0 0;
+  }
+
+  .aulas hr {
+    width: 90vw;
+  }
+  .aulas-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aulas-item img {
+    width: 80vw;
+    margin: 1rem 0;
+  }
+
+  .aulas-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .aulas-texto h2 {
+    color: #ff4081;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .aulas-texto p {
+    color: #000;
+    font-size: 1rem;
+    margin: 0 0 2rem 0;
+    text-align: justify;
   }
 
   footer {
