@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu";
+  box-sizing: border-box;
 }
 
 header {
@@ -17,6 +20,8 @@ header {
 }
 
 .logo h2 {
+  font-family: "Ubuntu";
+  font-weight: 700;
   font-size: 4rem;
   color: #fff;
   margin: 1rem;
@@ -38,6 +43,7 @@ nav li {
 }
 
 nav a {
+  font-family: "Ubuntu";
   font-size: 1.25rem;
   font-weight: 700;
   text-decoration: none;
@@ -47,7 +53,6 @@ nav a {
 
 main {
   display: flex;
-  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -68,14 +73,13 @@ main {
 }
 
 .banner-texto h1 {
-  font-family: "Courier New", Courier, monospace;
   font-size: 4.125rem;
   font-weight: 700;
   color: #ff4081;
 }
 
 .banner-texto p {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Ubuntu";
   font-size: 1rem;
   font-weight: 400;
   color: #555555;
@@ -83,7 +87,7 @@ main {
 }
 
 .banner-texto a {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Ubuntu";
   font-size: 1rem;
   font-weight: 400;
   color: #ff4081;
@@ -91,6 +95,56 @@ main {
   border: 2px solid #ff4081;
   padding: 0.5rem 1rem;
   border-radius: 3.8rem;
+}
+
+.cursos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  background-color: #f6f6f6;
+}
+
+.curso-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.curso-item img {
+  margin-bottom: 1rem;
+}
+
+.curso-item h2 {
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff4081;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.curso-item p {
+  font-family: "Ubuntu";
+  font-size: 1rem;
+  font-weight: 300;
+  color: #000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.curso-item a {
+  font-family: "Ubuntu";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #ff4081;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3.8rem;
+  text-decoration: none;
 }
 
 @media (max-width: 425px) {
@@ -120,6 +174,12 @@ main {
     font-size: 1.2rem;
   }
 
+  main {
+    width: 100vw;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+  }
   .logo {
     display: flex;
     justify-content: center;
@@ -169,7 +229,68 @@ main {
     border: 2px solid #ff4081;
     margin: 1rem;
     padding: 0.3rem 2.5rem;
-    border-radius: 62px;
-    margin: 0 0 1rem 4rem;
+    border-radius: 3.8rem;
+    margin: 0 0 1rem 4.5rem;
+  }
+
+  .cursos {
+    width: 100vw;
+    height: 300vh;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  .curso-item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+  }
+
+  #img1 {
+    width: 15rem;
+    margin-bottom: 1rem;
+  }
+  #img2 {
+    width: 16.7rem;
+    margin-bottom: 1rem;
+  }
+  #img3 {
+    width: 15.7rem;
+    height: 17.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .curso-item h2 {
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff4081;
+  }
+
+  .curso-item p {
+    font-family: "Ubuntu";
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+  }
+
+  .curso-item a {
+    font-family: "Ubuntu";
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #ff4081;
+    border-radius: 3.8rem;
+    padding: 0.5rem 3rem;
+    margin: 1rem;
   }
 }
