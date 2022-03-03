@@ -4,6 +4,7 @@
   padding: 0;
   font-family: "Ubuntu";
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 header {
@@ -519,6 +520,14 @@ footer {
     color: #fff;
   }
 
+  footer a {
+    color: #fff;
+    display: flex;
+  }
+
+  .footer-logo {
+    display: flex;
+  }
   .footer-logo img {
     width: 4rem;
   }

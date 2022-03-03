@@ -4,6 +4,7 @@
   padding: 0;
   font-family: "Ubuntu";
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 header {
@@ -126,6 +127,10 @@ footer {
     font-size: 1.2rem;
   }
 
+  .logo h2 {
+    font-size: 2rem;
+  }
+
   .container {
     width: 100vw;
   }
@@ -179,6 +184,12 @@ footer {
     align-items: center;
     padding: 1rem;
     color: #fff;
+  }
+
+  footer a {
+    color: #fff;
+    display: flex;
+    text-decoration: none;
   }
 
   .footer-logo img {
