@@ -147,6 +147,41 @@ main {
   text-decoration: none;
 }
 
+.depoimentos {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.depoimentos h2 {
+  font-family: "Ubuntu";
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #009688;
+  margin: 1rem 0;
+}
+
+.users {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.user {
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user img {
+  border: 2px solid #ff4081;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
 @media (max-width: 425px) {
   header {
     width: 100vw;
@@ -176,7 +211,7 @@ main {
 
   main {
     width: 100vw;
-    height: 160vh;
+    height: 300vh;
     display: flex;
     flex-direction: column;
   }
@@ -292,5 +327,46 @@ main {
     border-radius: 3.8rem;
     padding: 0.5rem 3rem;
     margin: 1rem;
+  }
+
+  .depoimentos {
+    width: 100vw;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .depoimentos h2 {
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #009688;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .users {
+    gap: 0;
+  }
+  .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .user img {
+    border: 2px solid #ff4081;
+    border-radius: 5rem;
+    margin: 1rem;
+    padding: 0.3rem;
+  }
+
+  .user p {
+    font-family: "Ubuntu";
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000;
+    text-align: left;
   }
 }
