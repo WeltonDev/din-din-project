@@ -367,7 +367,7 @@ footer {
     margin: 1rem;
     padding: 0.3rem 2.5rem;
     border-radius: 3.8rem;
-    margin: 0 0 1rem 4.5rem;
+    width: 90%;
   }
 
   .cursos {
@@ -506,6 +506,7 @@ footer {
     padding: 0.5rem 3rem;
     margin: 1rem;
     background-color: transparent;
+    width: 90%;
   }
 
   footer {
