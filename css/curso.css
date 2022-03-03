@@ -33,6 +33,7 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -43,7 +44,7 @@ nav li {
   margin: 2rem;
 }
 
-nav a {
+nav li a {
   font-family: "Ubuntu";
   font-size: 1.25rem;
   font-weight: 700;
@@ -52,55 +53,78 @@ nav a {
   text-transform: uppercase;
 }
 
-main {
+/*  ============= */
+.container-curso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.intro-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-texto h2 {
+  color: #ff4081;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.intro-texto p {
+  color: #000;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.aulas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  margin: 1rem 0 0 0;
+}
+.aulas hr {
+  width: 90vw;
+}
+.aulas-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container {
+
+.aulas-item img {
   width: 80vw;
+  margin: 1rem 0;
 }
 
-.container-item {
-  margin: 4rem 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-.item-texto {
-  width: 95vh;
+.aulas-texto {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 0 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
 }
-.item-texto h2 {
+
+.aulas-texto h2 {
   color: #ff4081;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
-.item-texto a {
-  background-color: #2e948a;
-  border-radius: 3.8rem;
-  text-align: center;
-  padding: 0.7rem 2rem;
-  width: 40%;
-  color: #fff;
-  font-weight: 500;
+.aulas-texto p {
+  color: #000;
+  font-size: 1rem;
+  margin: 0 0 2rem 0;
+  text-align: justify;
 }
-.container-texto h1 {
-  color: #ff4081;
-  font-size: 3.75rem;
-}
-
-.container-texto p {
-  color: #555555;
-  font-size: 1.25rem;
-}
-
-.container-item {
-  display: flex;
-}
+/* =============== */
 
 footer {
   background-color: #2e948a;
@@ -177,60 +201,6 @@ footer {
     font-size: 1.2rem;
   }
 
-  .logo h2 {
-    font-size: 2rem;
-  }
-
-  .container {
-    width: 100vw;
-  }
-
-  .container-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0.3rem;
-    margin: 1rem 0;
-  }
-  .container-item h2 {
-    font-size: 1.5rem;
-    color: #ff4081;
-    margin-bottom: 1rem;
-  }
-
-  .container-item p {
-    font-size: 1rem;
-    color: #000;
-    text-align: justify;
-    margin-bottom: 1rem;
-  }
-
-  .container-item a {
-    width: 90%;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
-    background-color: #419488;
-    border-radius: 3.8rem;
-    text-align: center;
-    padding: 0.5rem 7.2rem;
-    margin: 1rem;
-  }
-
-  .item-texto {
-    width: 100vw;
-  }
-  .container-texto h1 {
-    font-size: 3rem;
-    color: #ff4081;
-  }
-
-  .container-texto p {
-    font-size: 1rem;
-    color: #555555;
-  }
   footer {
     width: 100vw;
     background-color: #009688;
@@ -244,9 +214,11 @@ footer {
   footer a {
     color: #fff;
     display: flex;
-    text-decoration: none;
   }
 
+  .footer-logo {
+    display: flex;
+  }
   .footer-logo img {
     width: 4rem;
   }

@@ -43,7 +43,7 @@ nav li {
   margin: 2rem;
 }
 
-nav a {
+nav li a {
   font-family: "Ubuntu";
   font-size: 1.25rem;
   font-weight: 700;
