@@ -33,6 +33,7 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -43,7 +44,7 @@ nav li {
   margin: 2rem;
 }
 
-nav a {
+nav li a {
   font-family: "Ubuntu";
   font-size: 1.25rem;
   font-weight: 700;
@@ -52,55 +53,92 @@ nav a {
   text-transform: uppercase;
 }
 
-main {
+/*  ============= */
+
+.container-intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container {
+
+.intro {
+  margin: 2rem;
   width: 80vw;
-}
-
-.container-item {
-  margin: 4rem 0;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: flex-start;
 }
 
-.item-texto {
-  width: 95vh;
+.intro-texto {
+  width: 50vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 0 2rem;
-}
-.item-texto h2 {
-  color: #ff4081;
 }
 
-.item-texto a {
-  background-color: #2e948a;
-  border-radius: 3.8rem;
-  text-align: center;
-  padding: 0.7rem 2rem;
-  width: 40%;
-  color: #fff;
+.intro-texto h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #009688;
+  margin: 3rem 0;
+}
+
+.intro-texto p {
+  font-size: 1.25rem;
+  color: #000;
   font-weight: 500;
 }
-.container-texto h1 {
-  color: #ff4081;
-  font-size: 3.75rem;
-}
 
-.container-texto p {
-  color: #555555;
-  font-size: 1.25rem;
-}
-
-.container-item {
+.container-posts {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5e5;
 }
+
+.posts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.posts hr {
+  display: none;
+}
+
+.posts-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin: 1rem 0;
+}
+
+.posts-item img {
+  width: 35vw;
+  height: 30vh;
+  margin: 2rem;
+  border-radius: 8px;
+}
+
+.posts-item h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ff4081;
+  margin-bottom: 0.5rem;
+}
+
+.posts-item p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #000;
+  text-align: justify;
+}
+/* =============== */
 
 footer {
   background-color: #2e948a;
@@ -177,62 +215,97 @@ footer {
     font-size: 1.2rem;
   }
 
-  .logo h2 {
-    font-size: 2rem;
+  /* ===================== */
+
+  main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .container {
+  .intro {
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro img {
+    width: 75%;
+  }
+
+  .intro-texto {
     width: 100vw;
   }
 
-  .container-item {
+  .intro-texto h2 {
+    color: #009688;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .intro-texto p {
+    color: #000;
+    font-size: 1rem;
+    text-align: justify;
+    margin: 1rem;
+  }
+
+  .container-posts {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #e5e5e5;
+  }
+
+  .posts {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .posts hr {
+    display: block;
+  }
+
+  .posts-item {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.3rem;
+    padding: 1rem;
+  }
+
+  .posts-item img {
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 30px;
+  }
+
+  .posts-item h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ff4081;
     margin: 1rem 0;
   }
-  .container-item h2 {
-    font-size: 1.5rem;
-    color: #ff4081;
 
-    margin: 1rem;
-  }
-
-  .container-item p {
-    font-size: 1rem;
+  .posts-item p {
+    font-size: 0.9rem;
+    font-weight: 300;
     color: #000;
-    text-align: justify;
-    padding: 1rem;
     margin-bottom: 1rem;
   }
+  /* ===================== */
 
-  .container-item a {
-    width: 90%;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
-    background-color: #419488;
-    border-radius: 3.8rem;
-    text-align: center;
-    padding: 0.5rem 7.2rem;
-    margin: 1rem;
-  }
-
-  .item-texto {
-    width: 100vw;
-  }
-  .container-texto h1 {
-    font-size: 3rem;
-    color: #ff4081;
-  }
-
-  .container-texto p {
-    font-size: 1rem;
-    color: #555555;
-  }
   footer {
     width: 100vw;
     background-color: #009688;
@@ -246,7 +319,10 @@ footer {
   footer a {
     color: #fff;
     display: flex;
-    text-decoration: none;
+  }
+
+  .footer-logo {
+    display: flex;
   }
 
   .footer-logo img {
@@ -256,6 +332,7 @@ footer {
   .footer-logo h2 {
     font-size: 1.5rem;
   }
+
   .footer-menus ul {
     display: block;
   }
