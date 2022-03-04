@@ -275,6 +275,7 @@ footer {
     font-weight: 500;
     color: #ff4081;
     margin: 1rem 0 0 0;
+    background-color: #e5e5e5;
   }
 
   .container-post small {
@@ -425,5 +426,22 @@ footer {
     border: 1px solid #fff;
     padding: 0.2rem 0.1rem;
     border-radius: 3.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .curso-item img {
+    height: 200px;
+  }
+
+  .curso-item a {
+    width: 100%;
+    background-color: #ff4081;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0 0 0;
+    border-radius: 62px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
   }
 }

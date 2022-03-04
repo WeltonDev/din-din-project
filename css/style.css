@@ -102,7 +102,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
+  /* padding: 5rem 0; */
   background-color: #f6f6f6;
 }
 
@@ -115,6 +115,7 @@ main {
 }
 
 .curso-item img {
+  width: 10rem;
   margin-bottom: 1rem;
 }
 
@@ -185,7 +186,7 @@ main {
 }
 
 .wrapper-posts {
-  width: 98vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -198,7 +199,7 @@ main {
   font-size: 2.3rem;
   font-weight: 700;
   color: #009688;
-  margin: 1rem 35rem 1rem 0;
+  /* margin: 1rem 35rem 1rem 0; */
 }
 
 .wrapper-posts .posts {
@@ -222,13 +223,13 @@ main {
 }
 
 .post-item {
-  width: 20rem;
+  width: 42rem;
   display: flex;
   flex-direction: column;
 }
 
 .post-item img {
-  width: 8rem;
+  width: 13rem;
 }
 
 .post-item h2 {
@@ -386,8 +387,8 @@ footer {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: end;
     text-align: center;
     margin: 2rem;
   }
@@ -418,10 +419,11 @@ footer {
 
   .curso-item p {
     font-family: "Ubuntu";
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 300;
     color: #000;
-    text-align: center;
+    text-align: justify;
+    padding: 0.3rem;
   }
 
   .curso-item a {
@@ -511,6 +513,9 @@ footer {
     width: 90%;
   }
 
+  .post-item h2 {
+    text-align: center;
+  }
   footer {
     width: 100vw;
     background-color: #009688;
@@ -567,5 +572,18 @@ footer {
     border: 1px solid #fff;
     padding: 0.2rem 0.1rem;
     border-radius: 3.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner img {
+    width: 60%;
+  }
+  .post-item h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .wrapper-posts h2 {
+    padding: 2rem 0 0 0;
   }
 }
