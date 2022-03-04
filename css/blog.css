@@ -119,10 +119,10 @@ nav li a {
 }
 
 .posts-item img {
-  width: 35vw;
-  height: 30vh;
+  width: 30vw;
+  height: 40vh;
   margin: 2rem;
-  border-radius: 8px;
+  border-radius: 50%;
 }
 
 .posts-item h2 {
@@ -287,8 +287,7 @@ footer {
 
   .posts-item img {
     width: 10rem;
-    border-radius: 1rem;
-    box-shadow: 10px 20px 40px;
+    border-radius: 10rem;
   }
 
   .posts-item h2 {
@@ -364,5 +363,12 @@ footer {
     border: 1px solid #fff;
     padding: 0.2rem 0.1rem;
     border-radius: 3.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .posts-item img {
+    width: 13rem;
+    border-radius: 10rem;
   }
 }

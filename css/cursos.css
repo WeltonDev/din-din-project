@@ -68,6 +68,10 @@ main {
   justify-content: space-around;
 }
 
+.container-item img {
+  width: 200px;
+}
+
 .item-texto {
   width: 95vh;
   display: flex;
@@ -88,6 +92,7 @@ main {
   color: #fff;
   font-weight: 500;
 }
+
 .container-texto h1 {
   color: #ff4081;
   font-size: 3.75rem;
@@ -193,10 +198,13 @@ footer {
     padding: 0.3rem;
     margin: 1rem 0;
   }
+
+  .container-item img {
+    width: 200px;
+  }
   .container-item h2 {
     font-size: 1.5rem;
     color: #ff4081;
-
     margin: 1rem;
   }
 
@@ -287,5 +295,18 @@ footer {
     border: 1px solid #fff;
     padding: 0.2rem 0.1rem;
     border-radius: 3.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .item-texto a {
+    background-color: #2e948a;
+    border-radius: 3.8rem;
+    text-align: center;
+    padding: 0.7rem 2rem;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    margin: 1rem 0;
   }
 }

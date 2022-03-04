@@ -83,6 +83,17 @@ main {
   font-weight: 700;
 }
 
+.intro-logo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.intro-logo img {
+  margin: 0 5rem;
+  width: 38vw;
+  height: 72vh;
+}
+
 .aulas {
   width: 100vw;
   background-color: #f6f6f6;
@@ -98,7 +109,7 @@ main {
 }
 
 .aulas-item {
-  width: 50vw;
+  width: 70vw;
   display: flex;
   justify-content: space-center;
   align-items: center;
@@ -108,6 +119,7 @@ main {
 .aulas-item img {
   width: 17rem;
   margin: 2rem;
+  border-radius: 10rem;
 }
 
 .aulas-texto h2 {
@@ -199,6 +211,10 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 1rem 0.5rem;
+  }
+
+  .intro-logo img {
+    width: 70vw;
   }
 
   .intro-texto {
@@ -326,5 +342,27 @@ footer {
     border: 1px solid #fff;
     padding: 0.2rem 0.1rem;
     border-radius: 3.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-curso {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .intro-texto h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .aulas-item {
+    width: 90vw;
+  }
+
+  .aulas-item img {
+    width: 17rem;
+    border-radius: 10rem;
   }
 }

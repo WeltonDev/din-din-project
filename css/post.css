@@ -120,8 +120,8 @@ main .active {
 .curso-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-end;
   width: 30%;
 }
 
@@ -141,7 +141,7 @@ main .active {
 }
 
 .curso-item a {
-  width: 50%;
+  width: 100%;
   background-color: #ff4081;
   padding: 0.5rem 1rem;
   margin: 1rem 0 0 0;

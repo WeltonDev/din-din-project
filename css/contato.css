@@ -65,7 +65,15 @@ main {
   justify-content: space-between;
   margin: 2rem;
 }
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.banner img {
+  width: 35vw;
+}
 .contato h2 {
   font-size: 2.5rem;
   color: #ff4081;
