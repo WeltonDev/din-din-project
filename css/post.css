@@ -55,89 +55,6 @@ nav li a {
 
 /*  ============= */
 
-.container-intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.intro {
-  margin: 2rem;
-  width: 80vw;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-}
-
-.intro-texto {
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-}
-
-.intro-texto h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #009688;
-  margin: 3rem 0;
-}
-
-.intro-texto p {
-  font-size: 1.25rem;
-  color: #000;
-  font-weight: 500;
-}
-
-.container-posts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #e5e5e5;
-}
-
-.posts {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 2rem;
-  gap: 2rem;
-}
-
-.posts hr {
-  display: none;
-}
-
-.posts-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  margin: 1rem 0;
-}
-
-.posts-item img {
-  width: 35vw;
-  height: 30vh;
-  margin: 2rem;
-  border-radius: 8px;
-}
-
-.posts-item h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #ff4081;
-  margin-bottom: 0.5rem;
-}
-
-.posts-item p {
-  font-size: 1rem;
-  font-weight: 300;
-  color: #000;
-  text-align: justify;
-}
 /* =============== */
 
 footer {
@@ -216,95 +133,126 @@ footer {
   }
 
   /* ===================== */
-
   main {
-    width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-  }
-
-  .intro {
-    margin: 0;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
-  .intro img {
-    width: 75%;
-  }
-
-  .intro-texto {
+  main h2 {
     width: 100vw;
-  }
-
-  .intro-texto h2 {
-    color: #009688;
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+    color: #ff4081;
+    background-color: #f6f6f6;
     text-align: center;
+    padding: 1rem 0;
   }
 
-  .intro-texto p {
-    color: #000;
-    font-size: 1rem;
-    text-align: justify;
-    margin: 1rem;
-  }
-
-  .container-posts {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #e5e5e5;
-  }
-
-  .posts {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .posts hr {
-    display: block;
-  }
-
-  .posts-item {
+  .container-post {
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
-  .posts-item img {
-    width: 10rem;
-    border-radius: 1rem;
-    box-shadow: 10px 20px 40px;
+  .container-post img {
+    width: 23rem;
   }
 
-  .posts-item h2 {
+  .container-post h2 {
     font-size: 1.5rem;
     font-weight: 500;
     color: #ff4081;
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
   }
 
-  .posts-item p {
-    font-size: 0.9rem;
+  .container-post small {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: #9d9d9d;
+    margin: 0 0 1rem 0;
+  }
+
+  .container-post p {
+    font-size: 1rem;
     font-weight: 300;
     color: #000;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+    text-align: justify;
+    text-indent: 2rem;
+  }
+
+  .container-post b {
+    text-indent: 0;
+    text-align: center;
+    color: #009688;
   }
   /* ===================== */
+  /* CURSOS ============= */
+  .cursos {
+    width: 100vw;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    padding: 0.2rem;
+    box-sizing: border-box;
+  }
+
+  .curso-item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+  }
+
+  #img1 {
+    width: 15rem;
+    margin-bottom: 1rem;
+  }
+  #img2 {
+    width: 16.7rem;
+    margin-bottom: 1rem;
+  }
+  #img3 {
+    width: 15.7rem;
+    height: 17.3rem;
+    margin-bottom: 1rem;
+  }
+
+  #img4 {
+    width: 15rem;
+  }
+  .curso-item h2 {
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff4081;
+  }
+
+  .curso-item p {
+    font-family: "Ubuntu";
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+  }
+
+  .curso-item a {
+    font-family: "Ubuntu";
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #ff4081;
+    border-radius: 3.8rem;
+    padding: 0.5rem 3rem;
+    margin: 1rem;
+  }
 
   footer {
     width: 100vw;

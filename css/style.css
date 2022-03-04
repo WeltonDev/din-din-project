@@ -107,9 +107,10 @@ main {
 }
 
 .curso-item {
+  height: 480px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
