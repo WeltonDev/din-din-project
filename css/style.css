@@ -232,6 +232,23 @@ main {
   width: 13rem;
 }
 
+#img1 {
+  width: 15rem;
+  margin-bottom: 1rem;
+  border-radius: 10rem;
+}
+#img2 {
+  width: 16.7rem;
+  margin-bottom: 1rem;
+  border-radius: 10rem;
+}
+#img3 {
+  width: 15.7rem;
+  height: 17.3rem;
+  margin-bottom: 1rem;
+  border-radius: 10rem;
+}
+
 .post-item h2 {
   font-family: "Ubuntu";
   font-size: 1.5em;
@@ -396,15 +413,18 @@ footer {
   #img1 {
     width: 15rem;
     margin-bottom: 1rem;
+    border-radius: 10rem;
   }
   #img2 {
     width: 16.7rem;
     margin-bottom: 1rem;
+    border-radius: 10rem;
   }
   #img3 {
     width: 15.7rem;
     height: 17.3rem;
     margin-bottom: 1rem;
+    border-radius: 10rem;
   }
 
   #img4 {
@@ -585,5 +605,24 @@ footer {
   }
   .wrapper-posts h2 {
     padding: 2rem 0 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #img1 {
+    width: 15rem;
+    margin-bottom: 1rem;
+    border-radius: 10rem;
+  }
+  #img2 {
+    width: 16.7rem;
+    margin-bottom: 1rem;
+    border-radius: 10rem;
+  }
+  #img3 {
+    width: 15.7rem;
+    height: 17.3rem;
+    margin-bottom: 1rem;
+    border-radius: 10rem;
   }
 }
