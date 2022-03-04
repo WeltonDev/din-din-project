@@ -236,6 +236,7 @@ footer {
 
   .intro img {
     width: 75%;
+    filter: drop-shadow(18px 13px 11px);
   }
 
   .intro-texto {
@@ -286,9 +287,9 @@ footer {
   }
 
   .posts-item img {
-    width: 50%;
-    border-radius: 50%;
-    box-shadow: 10px 10px 30px;
+    width: 10rem;
+    border-radius: 5rem;
+    box-shadow: 10px 20px 40px;
   }
 
   .posts-item h2 {
