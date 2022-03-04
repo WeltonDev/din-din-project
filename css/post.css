@@ -54,6 +54,102 @@ nav li a {
 }
 
 /*  ============= */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h2 {
+  width: 100vw;
+  color: #ff4081;
+  font-size: 3.125rem;
+  text-align: center;
+  margin: 2rem 0 0 0;
+  background-color: #f6f6f6;
+}
+
+main .active {
+  display: none;
+}
+
+.container-post {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-post h2 {
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: #ff4081;
+  margin: 2rem 1rem;
+  background-color: #fff;
+}
+
+.container-post small {
+  font-weight: 300;
+  font-size: 0.75rem;
+  color: #9d9d9d;
+  margin: 0 0 3rem 0;
+}
+
+.container-post img {
+  width: 75vw;
+  height: 60vh;
+  margin: 0 0 3rem 0;
+}
+
+.container-post b {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #009688;
+}
+
+.cursos {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+  background-color: #f6f6f6;
+}
+
+.curso-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.curso-item h2 {
+  width: 100%;
+  font-size: 1.25rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.curso-item p {
+  text-align: center;
+}
+
+.curso-item img {
+  height: 280px;
+}
+
+.curso-item a {
+  width: 50%;
+  background-color: #ff4081;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0 0 0;
+  border-radius: 62px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
 
 /* =============== */
 
@@ -141,11 +237,23 @@ footer {
   }
 
   main h2 {
+    font-size: 1.5rem;
     width: 100vw;
     color: #ff4081;
     background-color: #f6f6f6;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
+    margin: 0;
+  }
+  main .active {
+    width: 100vw;
+    color: #000;
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 0 0 1rem 0;
+    font-weight: 500;
+    font-size: 0.75rem;
+    display: block;
   }
 
   .container-post {
@@ -155,6 +263,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
+    background-color: #e5e5e5;
   }
 
   .container-post img {
@@ -173,6 +282,7 @@ footer {
     font-weight: 300;
     color: #9d9d9d;
     margin: 0 0 1rem 0;
+    display: block;
   }
 
   .container-post p {
@@ -197,18 +307,20 @@ footer {
     display: flex;
     justify-content: flex-start;
     overflow-y: scroll;
-    padding: 0.2rem;
+    padding: 0.2rem 1rem;
     box-sizing: border-box;
   }
 
   .curso-item {
+    height: 500px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     margin: 2rem;
+    width: 100vw;
   }
 
   #img1 {
@@ -244,6 +356,7 @@ footer {
   }
 
   .curso-item a {
+    width: 100%;
     font-family: "Ubuntu";
     font-size: 1rem;
     font-weight: 400;
