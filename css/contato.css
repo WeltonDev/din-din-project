@@ -54,6 +54,49 @@ nav li a {
 }
 
 /*  ============= */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.contato h2 {
+  font-size: 2.5rem;
+  color: #ff4081;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+form {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 7px;
+  color: #58555d;
+}
+
+button {
+  width: 12vw;
+  margin: 0.5rem;
+  padding: 0.5rem 0;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  background-color: #ff4081;
+  font-weight: 800;
+}
 
 /* =============== */
 
@@ -134,11 +177,10 @@ footer {
 
   /* ===================== */
   .container {
-    border: #0a0ab8 1px dashed;
+    width: 100vw;
   }
 
   .contato {
-    border: #000 1px solid;
     display: flex;
     flex-direction: column;
   }
@@ -150,6 +192,7 @@ footer {
   }
 
   form {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
@@ -160,9 +203,16 @@ footer {
     margin: 0.5rem 0;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
+    color: #58555d;
+  }
+
+  textarea::placeholder,
+  input::placeholder {
+    color: #58555d;
   }
 
   button {
+    width: 90vw;
     background-color: #ff4081;
     color: #fff;
     border: none;
